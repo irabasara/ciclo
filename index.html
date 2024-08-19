@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240803114735">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240819155152">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,19 @@
 
 <body>
 	<div class="wrapper">
-		<main class="page" data-fp data-fp-bullets data-fp-effect="cards">
+		<main class="page" data-fp data-fp-bullets>
 			<section data-fp-section class="page__section screen-01">
 				<div class="screen-01__container">
-					<div class="screen-01__content">
-						<div class="screen-01__header header-text">
+					<div class="screen-01__body">
+						<div class="screen-01__section-header header-text">
 							<div class="subtitle">Multipurpose Minimal Solution</div>
-							<p class="title">The simplest things are often the truest…</p>
+							<h1 class="title">
+								The simplest
+								things are often
+								the truest…
+							</h1>
 						</div>
+						<img class="screen-01__image" src="img/hero.webp" alt="Image">
 					</div>
 				</div>
 			</section>
@@ -101,7 +106,7 @@
 							</p>
 						</li>
 						<li class="screen-04__item">
-							<img src="img/screen-04/cloud.webp" alt="Image" />
+							<img src="img/screen-04/face.webp" alt="Image" />
 							<h3>Cloud System</h3>
 							<p>
 								Completely reintermediate extensible infomediaries whereas
@@ -109,7 +114,7 @@
 							</p>
 						</li>
 						<li class="screen-04__item">
-							<img src="img/screen-04/cloud.webp" alt="Image" />
+							<img src="img/screen-04/laptop.webp" alt="Image" />
 							<h3>Cloud System</h3>
 							<p>
 								Completely reintermediate extensible infomediaries whereas
@@ -196,11 +201,11 @@
 						</div>
 						<ul data-watch class="screen-07__projects">
 							<li>
-								<div data-digits-counter data-digits-counter-speed="3000">80</div>
+								<div data-digits-counter data-digits-counter-speed="1500">80</div>
 								<span>Design Sprint</span>
 							</li>
 							<li>
-								<div data-digits-counter data-digits-counter-speed="3000">48</div>
+								<div data-digits-counter data-digits-counter-speed="1500">48</div>
 								<span>Design Sprint</span>
 							</li>
 						</ul>
@@ -267,7 +272,7 @@
 					</div>
 					<ul class="screen-09__list">
 						<li class="screen-09__item item">
-							<div class="screen-09__body">
+							<div class="item__body">
 								<h3 class="item__title title-dark">Design 01</h3>
 								<p>
 									Rapidiously harness mission process and backward
@@ -279,7 +284,7 @@
 							</div>
 						</li>
 						<li class="screen-09__item item">
-							<div class="screen-09__body">
+							<div class="item__body">
 								<h3 class="item__title title-dark">Design 02</h3>
 								<p>
 									Rapidiously harness mission process and backward
@@ -300,7 +305,7 @@
 							<div class="screen-10__image">
 								<img class="ibg" src="img/screen-10/01.webp" alt="Image" />
 							</div>
-							<h3 class="screen-10__title title-dark">Design 01</h3>
+							<h3 class="screen-10__title title title-dark">Design 01</h3>
 							<p>
 								Rapidiously harness mission process and backward communities.
 							</p>
@@ -309,7 +314,7 @@
 							<div class="screen-10__image">
 								<img class="ibg" src="img/screen-10/02.webp" alt="Image" />
 							</div>
-							<h3 class="screen-10__title title-dark">Design 02</h3>
+							<h3 class="screen-10__title title title-dark">Design 02</h3>
 							<p>
 								Rapidiously harness mission process and backward communities.
 							</p>
@@ -318,7 +323,7 @@
 							<div class="screen-10__image">
 								<img class="ibg" src="img/screen-10/03.webp" alt="Image" />
 							</div>
-							<h3 class="screen-10__title title-dark">Design 03</h3>
+							<h3 class="screen-10__title title title-dark">Design 03</h3>
 							<p>
 								Rapidiously harness mission process and backward communities.
 							</p>
@@ -358,15 +363,15 @@
 					<div class="screen-12__content">
 						<ul data-watch class="screen-12__items">
 							<li class="screen-12__item">
-								<div data-digits-counter data-digits-counter-speed="3000" class="screen-12__title">80</div>
+								<div data-digits-counter data-digits-counter-speed="1500" class="screen-12__title">80</div>
 								<div class="subtitle">Business Projects</div>
 							</li>
 							<li class="screen-12__item">
-								<div data-digits-counter data-digits-counter-speed="3000" class="screen-12__title">55</div>
+								<div data-digits-counter data-digits-counter-speed="1500" class="screen-12__title">55</div>
 								<div class="subtitle">Business Projects</div>
 							</li>
 							<li class="screen-12__item">
-								<div data-digits-counter data-digits-counter-speed="3000" class="screen-12__title">95</div>
+								<div data-digits-counter data-digits-counter-speed="1500" class="screen-12__title">95</div>
 								<div class="subtitle">Business Projects</div>
 							</li>
 						</ul>
@@ -375,7 +380,141 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20240803114735"></script>
+	<div id="fls-preloader">
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector("[data-preloader]") ?
+					document.querySelectorAll("[data-preloader] img") :
+					document.querySelectorAll("img");
+				const preloaderContainer = document.querySelector("#preloader");
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+				<style>
+					#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-color: #fff;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #353535;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #cacaca;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e8e8e8;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+				</style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+							<div id="preloader">
+								<div id="loader"></div>
+							</div>`;
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const preloader = document.querySelector("#preloader"),
+						htmlDocument = document.documentElement;
+
+					htmlDocument.classList.add("loading");
+					htmlDocument.classList.add("lock");
+
+					let imagesLoadedCount = 0;
+					const totalImages = preloaderImages.length;
+
+					preloaderImages.forEach((preloaderImage) => {
+						const imgClone = document.createElement("img");
+						imgClone.src = preloaderImage.dataset.src ?
+							preloaderImage.dataset.src :
+							preloaderImage.src;
+
+						imgClone.onload = imgClone.onerror = () => {
+							imagesLoadedCount++;
+							if (imagesLoadedCount === totalImages) {
+								setTimeout(() => {
+									addLoadedClass();
+								}, 5000);
+							}
+						};
+					});
+
+					function addLoadedClass() {
+						htmlDocument.classList.add("loaded");
+						htmlDocument.classList.remove("lock");
+						htmlDocument.classList.remove("loading");
+						setTimeout(() => {
+							preloader.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+
+	<script src="js/app.min.js?_v=20240819155152"></script>
 </body>
 
 </html>
