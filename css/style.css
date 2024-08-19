@@ -195,6 +195,140 @@ h6 {
   -o-object-fit: contain;
   object-fit: contain
 }
+@media (min-width:20em) and (max-width:120em) {
+  body {
+    font-size: clamp(1rem ,.8875rem + .5625vw ,1.5625rem)
+  }
+  [class*=__container] {
+    padding-left: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
+  }
+  [class*=__container] {
+    padding-right: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
+  }
+  .fp-bullets {
+    left: clamp(.46875rem ,-.9375rem + 7.03125vw ,7.5rem)
+  }
+  .title {
+    font-size: clamp(1.5625rem ,1.125rem + 2.1875vw ,3.75rem)
+  }
+  .header-text {
+    gap: clamp(.75rem ,.5rem + 1.25vw ,2rem)
+  }
+  .description {
+    margin-top: clamp(1.25rem ,.1rem + 5.75vw ,7rem)
+  }
+  .description {
+    font-size: clamp(1rem ,.8875rem + .5625vw ,1.5625rem)
+  }
+  .services {
+    gap: clamp(1.25rem ,.75rem + 2.5vw ,3.75rem)
+  }
+  .services-item {
+    gap: clamp(1.25rem ,.75rem + 2.5vw ,3.75rem)
+  }
+  .services-item h3 {
+    font-size: clamp(1.5rem ,1.425rem + .375vw ,1.875rem)
+  }
+  .services-item p {
+    font-size: clamp(1.25rem ,1.1875rem + .3125vw ,1.5625rem)
+  }
+  .page__section::after {
+    right: clamp(.46875rem ,-.9375rem + 7.03125vw ,7.5rem)
+  }
+  .page__section::after {
+    font-size: clamp(1.5625rem ,1.125rem + 2.1875vw ,3.75rem)
+  }
+  .screen-01__body {
+    padding-top: clamp(3.125rem ,1.25rem + 9.375vw ,12.5rem)
+  }
+  .screen-01__body {
+    padding-bottom: clamp(3.125rem ,1.25rem + 9.375vw ,12.5rem)
+  }
+  .screen-01__body {
+    padding-left: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
+  }
+  .screen-01__body {
+    padding-right: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
+  }
+  .screen-02__content {
+    gap: clamp(1.25rem ,-.875rem + 10.625vw ,11.875rem)
+  }
+  .screen-03__content {
+    gap: clamp(2.5rem ,1.5rem + 5vw ,7.5rem)
+  }
+  .screen-03__values {
+    row-gap: clamp(2.5rem ,2.05rem + 2.25vw ,4.75rem)
+  }
+  .screen-04__features {
+    gap: clamp(1.5rem ,1.2rem + 1.5vw ,3rem)
+  }
+  .screen-04__features {
+    margin-top: clamp(2.5rem ,1.15rem + 6.75vw ,9.25rem)
+  }
+  .screen-04__item h3 {
+    margin-top: clamp(1rem ,.875rem + .625vw ,1.625rem)
+  }
+  .screen-04__item h3 {
+    font-size: clamp(1.5rem ,1.425rem + .375vw ,1.875rem)
+  }
+  .screen-04__item p {
+    margin-top: clamp(1.25rem ,1.125rem + .625vw ,1.875rem)
+  }
+  .screen-07__content {
+    padding-left: clamp(1.25rem ,-1.5rem + 13.75vw ,15rem)
+  }
+  .screen-07__projects {
+    gap: clamp(2rem ,1.325rem + 3.375vw ,5.375rem)
+  }
+  .screen-07__projects {
+    margin-top: clamp(2.5rem ,.625rem + 9.375vw ,11.875rem)
+  }
+  .screen-07__projects li {
+    font-size: clamp(2rem ,1.65rem + 1.75vw ,3.75rem)
+  }
+  .screen-08__content {
+    gap: clamp(2.5rem ,1.5rem + 5vw ,7.5rem)
+  }
+  .screen-08__values {
+    row-gap: clamp(2.5rem ,2.05rem + 2.25vw ,4.75rem)
+  }
+  .screen-09 .item {
+    gap: clamp(.0000000625rem ,-.724999925rem + 3.6249999375vw ,3.625rem)
+  }
+  .screen-09 .item__title {
+    font-size: clamp(1.125rem ,.975rem + .75vw ,1.875rem)
+  }
+  .screen-09 .item__title {
+    margin-bottom: clamp(1rem ,.8rem + 1vw ,2rem)
+  }
+  .screen-09__content {
+    gap: clamp(.5rem ,.2rem + 1.5vw ,2rem)
+  }
+  .screen-10__title {
+    font-size: clamp(1.125rem ,.975rem + .75vw ,1.875rem)
+  }
+  .screen-10__title {
+    margin-bottom: clamp(1rem ,.8rem + 1vw ,2rem)
+  }
+  .screen-10__image {
+    margin-bottom: clamp(2rem ,1.65rem + 1.75vw ,3.75rem)
+  }
+  .screen-11__container {
+    gap: clamp(2.5rem ,.0000000625rem + 12.5vw ,15rem)
+  }
+  .screen-12__content {
+    padding-top: clamp(3.125rem ,.5rem + 13.125vw ,16.25rem)
+  }
+  .screen-12__content {
+    padding-bottom: clamp(3.125rem ,.5rem + 13.125vw ,16.25rem)
+  }
+  .screen-12__content {
+    padding-left: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
+  }
+  .screen-12__content {
+    padding-right: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
+  }
+}
 .subtitle {
   font-weight: 400;
   color: #e3e6ec;
@@ -1120,150 +1254,6 @@ h6 {
     justify-content: center;
     flex-direction: column;
     min-height: 100%
-  }
-}
-@media (max-width:29.99875em) {
-  .fp-bullets {
-    top: auto;
-    bottom: 1.25rem;
-    -webkit-transform: translate(50%,0);
-    transform: translate(50%,0);
-    flex-direction: row;
-    right: 50%
-  }
-}
-@media (min-width:20em) and (max-width:120em) {
-  body {
-    font-size: clamp(1rem ,.8875rem + .5625vw ,1.5625rem)
-  }
-  [class*=__container] {
-    padding-left: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
-  }
-  [class*=__container] {
-    padding-right: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
-  }
-  .fp-bullets {
-    left: clamp(.46875rem ,-.9375rem + 7.03125vw ,7.5rem)
-  }
-  .title {
-    font-size: clamp(1.5625rem ,1.125rem + 2.1875vw ,3.75rem)
-  }
-  .header-text {
-    gap: clamp(.75rem ,.5rem + 1.25vw ,2rem)
-  }
-  .description {
-    margin-top: clamp(1.25rem ,.1rem + 5.75vw ,7rem)
-  }
-  .description {
-    font-size: clamp(1rem ,.8875rem + .5625vw ,1.5625rem)
-  }
-  .services {
-    gap: clamp(1.25rem ,.75rem + 2.5vw ,3.75rem)
-  }
-  .services-item {
-    gap: clamp(1.25rem ,.75rem + 2.5vw ,3.75rem)
-  }
-  .services-item h3 {
-    font-size: clamp(1.5rem ,1.425rem + .375vw ,1.875rem)
-  }
-  .services-item p {
-    font-size: clamp(1.25rem ,1.1875rem + .3125vw ,1.5625rem)
-  }
-  .page__section::after {
-    right: clamp(.46875rem ,-.9375rem + 7.03125vw ,7.5rem)
-  }
-  .page__section::after {
-    font-size: clamp(1.5625rem ,1.125rem + 2.1875vw ,3.75rem)
-  }
-  .screen-01__body {
-    padding-top: clamp(3.125rem ,1.25rem + 9.375vw ,12.5rem)
-  }
-  .screen-01__body {
-    padding-bottom: clamp(3.125rem ,1.25rem + 9.375vw ,12.5rem)
-  }
-  .screen-01__body {
-    padding-left: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
-  }
-  .screen-01__body {
-    padding-right: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
-  }
-  .screen-02__content {
-    gap: clamp(1.25rem ,-.875rem + 10.625vw ,11.875rem)
-  }
-  .screen-03__content {
-    gap: clamp(2.5rem ,1.5rem + 5vw ,7.5rem)
-  }
-  .screen-03__values {
-    row-gap: clamp(2.5rem ,2.05rem + 2.25vw ,4.75rem)
-  }
-  .screen-04__features {
-    gap: clamp(1.5rem ,1.2rem + 1.5vw ,3rem)
-  }
-  .screen-04__features {
-    margin-top: clamp(2.5rem ,1.15rem + 6.75vw ,9.25rem)
-  }
-  .screen-04__item h3 {
-    margin-top: clamp(1rem ,.875rem + .625vw ,1.625rem)
-  }
-  .screen-04__item h3 {
-    font-size: clamp(1.5rem ,1.425rem + .375vw ,1.875rem)
-  }
-  .screen-04__item p {
-    margin-top: clamp(1.25rem ,1.125rem + .625vw ,1.875rem)
-  }
-  .screen-07__content {
-    padding-left: clamp(1.25rem ,-1.5rem + 13.75vw ,15rem)
-  }
-  .screen-07__projects {
-    gap: clamp(2rem ,1.325rem + 3.375vw ,5.375rem)
-  }
-  .screen-07__projects {
-    margin-top: clamp(2.5rem ,.625rem + 9.375vw ,11.875rem)
-  }
-  .screen-07__projects li {
-    font-size: clamp(2rem ,1.65rem + 1.75vw ,3.75rem)
-  }
-  .screen-08__content {
-    gap: clamp(2.5rem ,1.5rem + 5vw ,7.5rem)
-  }
-  .screen-08__values {
-    row-gap: clamp(2.5rem ,2.05rem + 2.25vw ,4.75rem)
-  }
-  .screen-09 .item {
-    gap: clamp(.0000000625rem ,-.724999925rem + 3.6249999375vw ,3.625rem)
-  }
-  .screen-09 .item__title {
-    font-size: clamp(1.125rem ,.975rem + .75vw ,1.875rem)
-  }
-  .screen-09 .item__title {
-    margin-bottom: clamp(1rem ,.8rem + 1vw ,2rem)
-  }
-  .screen-09__content {
-    gap: clamp(.5rem ,.2rem + 1.5vw ,2rem)
-  }
-  .screen-10__title {
-    font-size: clamp(1.125rem ,.975rem + .75vw ,1.875rem)
-  }
-  .screen-10__title {
-    margin-bottom: clamp(1rem ,.8rem + 1vw ,2rem)
-  }
-  .screen-10__image {
-    margin-bottom: clamp(2rem ,1.65rem + 1.75vw ,3.75rem)
-  }
-  .screen-11__container {
-    gap: clamp(2.5rem ,.0000000625rem + 12.5vw ,15rem)
-  }
-  .screen-12__content {
-    padding-top: clamp(3.125rem ,.5rem + 13.125vw ,16.25rem)
-  }
-  .screen-12__content {
-    padding-bottom: clamp(3.125rem ,.5rem + 13.125vw ,16.25rem)
-  }
-  .screen-12__content {
-    padding-left: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
-  }
-  .screen-12__content {
-    padding-right: clamp(.9375rem ,-1.875rem + 14.0625vw ,15rem)
   }
 }
 @media (min-width:64em) and (max-width:120em) {
