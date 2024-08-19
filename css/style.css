@@ -1256,16 +1256,6 @@ h6 {
     min-height: 100%
   }
 }
-@media (max-width:29.99875em) {
-  .fp-bullets {
-    top: auto;
-    bottom: 1.25rem;
-    -webkit-transform: translate(50%,0);
-    transform: translate(50%,0);
-    flex-direction: row;
-    right: 50%
-  }
-}
 @media (min-width:64em) and (max-width:120em) {
   .fp-bullets .fp-bullet {
     height: clamp(1.25rem ,-.8928571429rem + 3.3482142857vw ,3.125rem)
